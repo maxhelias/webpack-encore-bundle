@@ -33,7 +33,7 @@ class EntrypointLookup implements EntrypointLookupInterface, IntegrityDataProvid
 
     private $strictMode;
 
-    public function __construct(string $entrypointJsonPath, CacheItemPoolInterface $cache = null, string $cacheKey = null, bool $strictMode = true)
+    public function __construct(string $entrypointJsonPath, ?CacheItemPoolInterface $cache = null, ?string $cacheKey = null, bool $strictMode = true)
     {
         $this->entrypointJsonPath = $entrypointJsonPath;
         $this->cache = $cache;

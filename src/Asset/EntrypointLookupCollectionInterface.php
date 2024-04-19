@@ -18,5 +18,5 @@ interface EntrypointLookupCollectionInterface
      *
      * @throws UndefinedBuildException if the build does not exist
      */
-    public function getEntrypointLookup(string $buildName = null): EntrypointLookupInterface;
+    public function getEntrypointLookup(?string $buildName = null): EntrypointLookupInterface;
 }
